@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;application.GoController&apos; to &apos;GameController&apos;&#x0D;&#x0A;- Original project: &apos;fx_project_client&apos;&#x0D;&#x0A;- Original element: &apos;application.GoController&apos;&#x0D;&#x0A;- Renamed element: &apos;application.GameController&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GoController&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;application{GoController.java[GoController" matchStrategy="1" name="GameController" qualified="false" references="true" similarDeclarations="false" stamp="1686636789685" textual="false" version="1.0"/>
+</session>

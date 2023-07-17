@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane 
+fx:controller="draw_line.DrawController"
+maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <HBox style="-fx-background-color: white; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="canvas" height="300.0" width="300.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Canvas>
+         </children>
+      </HBox>
+   </left>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <center>
+      <Separator orientation="VERTICAL" prefHeight="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" />
+         </BorderPane.margin>
+      </Separator>
+   </center>
+   <right>
+      <VBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="txtArea" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="btnClear" mnemonicParsing="false" prefWidth="200.0" text="Clear" />
+            <ColorPicker fx:id="pick" prefWidth="200.0" />
+            <Slider fx:id="slider" showTickLabels="true" showTickMarks="true" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

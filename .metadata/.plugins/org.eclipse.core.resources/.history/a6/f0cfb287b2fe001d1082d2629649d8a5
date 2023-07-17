@@ -1,0 +1,81 @@
+package main;
+
+import java.io.File;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.Stage;
+
+public class RootController implements Initializable{
+	@FXML private ComboBox<String> comboBox;
+	@FXML private TextArea textArea;
+	
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		comboBox.getSelectionModel().selectedIndexProperty().addListener((target,o,n)->{
+			int index = n.intValue();
+			System.out.println("select comboBox : " + index);
+			
+			switch(index) {
+			case 0 :
+				// directory chooser
+				// javaFX에서 제공하는 폴더 선택 상자
+				DirectoryChooser chooser = new DirectoryChooser();
+				chooser.setTitle("디렉토리 선택");
+				// 오픈 기본 디렉토리 내 PC
+				chooser.setInitialDirectory(new File("src"));
+				chooser.showDialog(primaryStage);
+				// showDialog - directory 선택 완료 시 또는 취소 시 까지 blocking
+				File selectedDir = chooser.showDialog(primaryStage);
+				System.out.println(selectedDir);
+				if(selectedDir != null) {
+					System.out.println(selectedDir.isDirectory());
+					for(File f : selectedDir.listFiles()) {
+						textArea.appendText(f.getName()+"\n");
+					}
+				}
+				break;
+			case 1 :
+				// file chooser
+				break;
+				
+			case 2 :
+				// popup window
+				break;
+				
+			case 3 :
+				// custom window
+				break;
+			}
+		});
+	}
+	
+	private Stage primaryStage;
+	
+	
+	public void setStage(Stage primaryStage) {
+		this.primaryStage = primaryStage;
+	}
+	
+	public void handleNew() {
+		System.out.println("New!");
+	}
+	
+	public void handleOpen() {
+		System.out.println("Open!");
+	}
+	
+	public void handleSave() {
+		System.out.println("Save!");
+	}
+	
+	public void handleClose() {
+		System.out.println("Close!");
+	}
+	
+}

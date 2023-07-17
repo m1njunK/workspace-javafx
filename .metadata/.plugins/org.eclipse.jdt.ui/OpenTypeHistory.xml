@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=f08_controls/C:\/Program Files\/Java\/jdk-11\/lib\/jrt-fs.jar`java.naming=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/11\/docs\/api\/=/=/module=/true=/&lt;javax.naming.spi(InitialContextFactory.class[InitialContextFactory" modifiers="1537" timestamp="1681176227988"/>
+    <typeInfo handle="=f05_event_handler/C:\/workspace\/javafx\/javafx-sdk-11.0.2\/lib\/javafx.graphics.jar=/module=/true=/&lt;javafx.application(Application.class[Application" modifiers="1057" timestamp="1547633160000"/>
+    <typeInfo handle="=f08_controls/C:\/workspace\/javafx\/javafx-sdk-11.0.2\/lib\/javafx.fxml.jar=/module=/true=/&lt;javafx.fxml(Initializable.class[Initializable" modifiers="1537" timestamp="1547633159000"/>
+    <typeInfo handle="=database_question/src&lt;guide.member.dao{MemberDAO.java[MemberDAO" modifiers="513" timestamp="1670549886690"/>
+</typeInfoHistroy>

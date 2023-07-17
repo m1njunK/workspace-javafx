@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;fx_chat_server/java_module_path.txtx&apos; to &apos;java_module_path.txt&apos;" description="Rename resource &apos;java_module_path.txtx&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="java_module_path.txtx" name="java_module_path.txt" stamp="1685587647561" updateReferences="true"/>
+</session>
